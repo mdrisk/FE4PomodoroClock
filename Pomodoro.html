@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8">
+  <title>The Pomodoro Clock</title>
+  <meta name="description" content="The Pomodoro Clock">
+  <meta name="author" content="Matthew Risk">
+
+  <link rel="stylesheet" href="Pomodoro.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+   <div class="grid-area grid-area-1">
+    <h1 id="headerInfo">Pomodoro Time!</h1>
+   </div>
+   <div class="grid-area grid-area-2">
+     <h1>Work Time</h1>
+     <button class="btn1" onClick="incW()"><i class="fa fa-angle-up fa-2x"></i>
+  </button>
+     <h1 id="workTime">00</h1>
+     <button class="btn1" onClick="decW()"><i class="fa fa-angle-down fa-2x"></i></button>
+    </div>
+   <div class="grid-area grid-area-3">
+    <button id="info" onClick="pauseTime()">00:00</button>
+   </div>
+   <div class="grid-area grid-area-4">
+     <h1>Break Time</h1>
+     <button class="btn1" onClick="incB()"><i class="fa fa-angle-up fa-2x"></i></button>
+     <h1 id="breakTime">00</h1>
+     <button class="btn1" onClick="decB()"><i class="fa fa-angle-down fa-2x"></i></button>
+   </div>
+   <div class="grid-area grid-area-5">
+     <button class="btn1" onClick="start()">Start</button>
+      <button class="btn1" onClick="resetTimer()">Reset</button>
+   </div>
+   <div class="grid-area grid-area-6">
+    <h4>Created by: <a href="https://codepen.io/mdrisk/full/LzaYzb/">Matthew Risk</a>.<br>Featuring CSS Grid layout.</h4>
+     </div>
+  </div>
+
+
+</body>
+  <script type="text/javascript" src="Pomodoro.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+</html>
